@@ -6,7 +6,7 @@ This document establishes the **mandatory rules**, coding standards, and archite
 
 ## 1. Iron Architectural Invariants
 
-### 🔴 Rule 1.1: Strict Transactional Integrity for State Mutations
+### Rule 1.1: Strict Transactional Integrity for State Mutations
 - **Prohibition:** Under no circumstances shall multi-table mutations (e.g. updating user XP, level upgrades, deducting coins for shop purchases, creating certificate records) be executed across separate, unmanaged queries.
 - **Rationale:** If any query in a gamification or payment sequence fails (e.g. network timeout or constraint violation), the database would enter an inconsistent state where coins are deducted without item delivery, or XP is granted without level re-indexing.
 - **Requirement:**
@@ -18,7 +18,7 @@ This document establishes the **mandatory rules**, coding standards, and archite
   });
   ```
 
-### 🔴 Rule 1.2: No Raw SQL String Interpolation (Zero SQL Injection)
+### Rule 1.2: No Raw SQL String Interpolation (Zero SQL Injection)
 - **Prohibition:** Never interpolate or concatenate user input or runtime variables into SQL strings (e.g. `` db.sequelize.query(`SELECT * FROM users WHERE id = ${req.body.id}`) `` is strictly banned).
 - **Rationale:** SQL injection remains one of the top OWASP vulnerabilities. Concatenation invalidates query caching and opens catastrophic data breaches.
 - **Requirement:**
@@ -30,7 +30,7 @@ This document establishes the **mandatory rules**, coding standards, and archite
   });
   ```
 
-### 🔴 Rule 1.3: Mandatory Input Validation via Express-Validator
+### Rule 1.3: Mandatory Input Validation via Express-Validator
 - **Prohibition:** Controllers must never process raw `req.body`, `req.params`, or `req.query` without schema validation.
 - **Rationale:** Processing unvalidated input leads to type coercion bugs, unexpected `null` dereferencing, and parameter pollution.
 - **Requirement:**
@@ -44,7 +44,7 @@ This document establishes the **mandatory rules**, coding standards, and archite
   }
   ```
 
-### 🔴 Rule 1.4: Separation of Concerns (Slim Controllers, Rich Services)
+### Rule 1.4: Separation of Concerns (Slim Controllers, Rich Services)
 - **Prohibition:** Do not place database queries, third-party API calls, or business calculations inside Express route handlers/controllers.
 - **Rationale:** Controllers are purely HTTP dispatchers. Mixing business logic with HTTP mechanics prevents unit testability, code reuse, and clean auditing.
 - **Requirement:**

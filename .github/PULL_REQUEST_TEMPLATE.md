@@ -4,13 +4,13 @@
 Closes #<!-- issue number -->
 
 ### Type of Change
-- [ ] 🐛 Bug fix (non-breaking change fixing an issue)
-- [ ] ✨ New feature (non-breaking change adding functionality)
-- [ ] 💥 Breaking change (fix or feature causing existing functionality to not work as expected)
-- [ ] ⚡ Performance improvement
-- [ ] 🛡️ Security hardening
-- [ ] 📚 Documentation update
-- [ ] 🧹 Code refactor
+- [ ] Bug fix (non-breaking change fixing an issue)
+- [ ] New feature (non-breaking change adding functionality)
+- [ ] Breaking change (fix or feature causing existing functionality to not work as expected)
+- [ ] Performance improvement
+- [ ] Security hardening
+- [ ] Documentation update
+- [ ] Code refactor
 
 ---
 

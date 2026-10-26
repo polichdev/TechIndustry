@@ -4,7 +4,7 @@ This roadmap documents completed milestones, active technical initiatives, and l
 
 ---
 
-## Milestone 1: Core Platform & Foundation (Status: Completed :white_check_mark:)
+## Milestone 1: Core Platform & Foundation (Status: Completed)
 
 - [x] Layered MVC Monolith with Node.js & Express 5.
 - [x] Relational schema modeling in PostgreSQL via Sequelize ORM.
@@ -17,7 +17,7 @@ This roadmap documents completed milestones, active technical initiatives, and l
 
 ---
 
-## Milestone 2: Performance & Scalability (Status: In Progress :construction:)
+## Milestone 2: Performance & Scalability (Status: In Progress)
 
 - [ ] **Redis Caching Tier:**
   - Cache course catalog and module structure in Redis to eliminate redundant database reads.
@@ -30,7 +30,7 @@ This roadmap documents completed milestones, active technical initiatives, and l
 
 ---
 
-## Milestone 3: Enterprise & Extensibility (Status: Planned :crystal_ball:)
+## Milestone 3: Enterprise & Extensibility (Status: Planned)
 
 - [ ] **SCORM / xAPI Integration:** Standard e-learning packaging export/import for corporate training.
 - [ ] **Interactive In-Browser Code Runner:** Sandboxed WebAssembly or isolated container execution for C#, Python, and JS code challenges.

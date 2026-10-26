@@ -333,7 +333,7 @@ The application will be accessible at [http://localhost:3000](http://localhost:3
 
 All architectural choices, engineering standards, threat assessments, and developer guidelines are comprehensively documented:
 
-### 🏛️ Architecture & Deep-Dive Specs
+### Architecture & Deep-Dive Specs
 - [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) — System architecture, layered request lifecycles, and design patterns.
 - [docs/DATA_MODEL.md](docs/DATA_MODEL.md) — Complete relational schema, Entity-Relationship (ER) diagram, indexing, and transactions.
 - [docs/THREAT_MODEL.md](docs/THREAT_MODEL.md) — STRIDE security model, trust boundaries, and vulnerability mitigations.
@@ -342,7 +342,7 @@ All architectural choices, engineering standards, threat assessments, and develo
 - [docs/API_DOCUMENTATION.md](docs/API_DOCUMENTATION.md) — Complete REST API specification, request/response schemas, and rate limits.
 - [docs/DEPLOYMENT_AND_OPERATIONS.md](docs/DEPLOYMENT_AND_OPERATIONS.md) — Production deployment with Nginx, PM2, Docker, and PostgreSQL tuning.
 
-### 📋 Architecture Decision Records (ADRs)
+### Architecture Decision Records (ADRs)
 Explore our rationale and trade-offs in [docs/adr/](docs/adr/README.md):
 - [ADR-001: Modular Layered MVC Monolith](docs/adr/ADR-001-layered-mvc-monolith.md)
 - [ADR-002: PostgreSQL and Sequelize ORM](docs/adr/ADR-002-postgresql-and-sequelize.md)
@@ -351,13 +351,13 @@ Explore our rationale and trade-offs in [docs/adr/](docs/adr/README.md):
 - [ADR-005: Server-Side Vector PDFKit Certificate Generation](docs/adr/ADR-005-vector-pdfkit-certificate-verification.md)
 - [ADR-006: Multi-Layered Defense-in-Depth Security Pipeline](docs/adr/ADR-006-defense-in-depth-security-pipeline.md)
 
-### 🤖 AI Agent & Developer Standards
+### AI Agent & Developer Standards
 - [agent/RULES.md](agent/RULES.md) — Mandatory development rules, transaction invariants, and coding standards.
 - [agent/ARCHITECTURE.md](agent/ARCHITECTURE.md) — Fast-load mental model and directory responsibilities.
 - [agent/TECH_STACK.md](agent/TECH_STACK.md) — Detailed library version matrix and rationale.
 - [agent/ROADMAP.md](agent/ROADMAP.md) — Completed milestones, active initiatives, and future vision.
 
-### 🤝 Community & Governance
+### Community & Governance
 - [CONTRIBUTING.md](CONTRIBUTING.md) — Contribution guidelines, local environment setup, and Conventional Commits.
 - [SECURITY.md](SECURITY.md) — Vulnerability disclosure policy and security SLAs.
 - [CHANGELOG.md](CHANGELOG.md) — Release notes and version history adhering to SemVer.

@@ -12,8 +12,8 @@ Security patches and bug fixes are applied to the active major and minor release
 
 | Version | Supported          | Security Maintenance Level |
 | ------- | ------------------ | -------------------------- |
-| 1.0.x   | :white_check_mark: | Full Active Support        |
-| < 1.0   | :x:                | End of Life (Unsupported)  |
+| 1.0.x   | Yes | Full Active Support        |
+| < 1.0   | No                 | End of Life (Unsupported)  |
 
 ---
 
