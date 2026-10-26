@@ -2,6 +2,8 @@
 
 [![REST API](https://img.shields.io/badge/REST_API-Documentation-6BA539.svg?logo=openapiinitiative&logoColor=white)](docs/API_DOCUMENTATION.md)
 [![Architecture: Layered MVC](https://img.shields.io/badge/Architecture-Layered_MVC-blue.svg)](docs/ARCHITECTURE.md)
+[![Threat Model](https://img.shields.io/badge/Security-STRIDE_Threat_Model-red.svg)](docs/THREAT_MODEL.md)
+[![ADR Records](https://img.shields.io/badge/ADR-Architecture_Decisions-purple.svg)](docs/adr/README.md)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 [![Node.js](https://img.shields.io/badge/Node.js-20.x-339933.svg?logo=nodedotjs&logoColor=white)](https://nodejs.org/)
@@ -327,12 +329,39 @@ The application will be accessible at [http://localhost:3000](http://localhost:3
 
 ---
 
-## Documentation Index
+## Documentation & Engineering Index
 
-All architectural choices, setup guides, and project specifications are documented in the repository:
+All architectural choices, engineering standards, threat assessments, and developer guidelines are comprehensively documented:
 
+### 🏛️ Architecture & Deep-Dive Specs
 - [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) — System architecture, layered request lifecycles, and design patterns.
+- [docs/DATA_MODEL.md](docs/DATA_MODEL.md) — Complete relational schema, Entity-Relationship (ER) diagram, indexing, and transactions.
+- [docs/THREAT_MODEL.md](docs/THREAT_MODEL.md) — STRIDE security model, trust boundaries, and vulnerability mitigations.
+- [docs/GAMIFICATION_ENGINE.md](docs/GAMIFICATION_ENGINE.md) — Level threshold formulas, streak mechanics, and coin ledger accounting.
+- [docs/AI_MENTOR_PIPELINE.md](docs/AI_MENTOR_PIPELINE.md) — Groq LLaMA 3.3 pipeline, topic guardrails, and token limits.
 - [docs/API_DOCUMENTATION.md](docs/API_DOCUMENTATION.md) — Complete REST API specification, request/response schemas, and rate limits.
+- [docs/DEPLOYMENT_AND_OPERATIONS.md](docs/DEPLOYMENT_AND_OPERATIONS.md) — Production deployment with Nginx, PM2, Docker, and PostgreSQL tuning.
+
+### 📋 Architecture Decision Records (ADRs)
+Explore our rationale and trade-offs in [docs/adr/](docs/adr/README.md):
+- [ADR-001: Modular Layered MVC Monolith](docs/adr/ADR-001-layered-mvc-monolith.md)
+- [ADR-002: PostgreSQL and Sequelize ORM](docs/adr/ADR-002-postgresql-and-sequelize.md)
+- [ADR-003: Hybrid Session and JWT Authentication](docs/adr/ADR-003-hybrid-session-and-jwt-auth.md)
+- [ADR-004: Groq LPU LLaMA 3.3 for AI Mentorship](docs/adr/ADR-004-groq-llama3-for-ai-mentorship.md)
+- [ADR-005: Server-Side Vector PDFKit Certificate Generation](docs/adr/ADR-005-vector-pdfkit-certificate-verification.md)
+- [ADR-006: Multi-Layered Defense-in-Depth Security Pipeline](docs/adr/ADR-006-defense-in-depth-security-pipeline.md)
+
+### 🤖 AI Agent & Developer Standards
+- [agent/RULES.md](agent/RULES.md) — Mandatory development rules, transaction invariants, and coding standards.
+- [agent/ARCHITECTURE.md](agent/ARCHITECTURE.md) — Fast-load mental model and directory responsibilities.
+- [agent/TECH_STACK.md](agent/TECH_STACK.md) — Detailed library version matrix and rationale.
+- [agent/ROADMAP.md](agent/ROADMAP.md) — Completed milestones, active initiatives, and future vision.
+
+### 🤝 Community & Governance
+- [CONTRIBUTING.md](CONTRIBUTING.md) — Contribution guidelines, local environment setup, and Conventional Commits.
+- [SECURITY.md](SECURITY.md) — Vulnerability disclosure policy and security SLAs.
+- [CHANGELOG.md](CHANGELOG.md) — Release notes and version history adhering to SemVer.
+- [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) — Contributor Covenant v2.1.
 - [LICENSE](LICENSE) — Project licensing terms (MIT License).
 
 ---

@@ -1,16 +1,27 @@
 {
   "name": "tech-industry",
   "version": "1.0.0",
-  "description": "Tech Industry",
+  "description": "Scalable IT education platform and LMS featuring interactive course curricula, automated assessments, Groq AI mentor, gamification economy, and PDF certificate generation.",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
     "dev": "nodemon server.js"
   },
   "keywords": [
+    "lms",
+    "e-learning",
     "education",
-    "quiz",
-    "it"
+    "nodejs",
+    "express",
+    "postgresql",
+    "sequelize",
+    "handlebars",
+    "groq",
+    "llama3",
+    "gamification",
+    "quizzes",
+    "certificates",
+    "pdfkit"
   ],
   "author": "",
   "license": "ISC",
